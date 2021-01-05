@@ -3,7 +3,7 @@ name: Notify on API change
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "**.html"
 jobs:
