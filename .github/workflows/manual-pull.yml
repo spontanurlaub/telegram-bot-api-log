@@ -28,6 +28,8 @@ jobs:
     - name: Notify changes
       if: steps.commit_files.outputs.git_diff != ''
       uses: appleboy/telegram-action@master
+      env:
+        diff: ${{ steps.commit_files.outputs.git_diff }}
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
@@ -36,4 +38,4 @@ jobs:
 
           You can compare it to the previous version here: https://github.com/code1mountain/telegram-bot-api-log
           
-          ${{ steps.commit_files.outputs.git_diff }}
+          $diff
