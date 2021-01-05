@@ -7,11 +7,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: wei/wget@v1
-      with:
-        args: --no-parent -r https://core.telegram.org/bots/api
     - name: Pull from Telegram
       run: |
+        wget --no-parent -rq https://core.telegram.org/bots/api
         git config --local user.name  ${{ github.actor }}
         git add .
         git commit -am "Update the Telegram Documentation"
