@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Pull from Telegram
       run: |
-        sudo wget --no-parent -rq https://core.telegram.org/bots/api
+        sudo wget https://core.telegram.org/bots/api
     - name: Commit Files
       run: |
         git config --local user.name  ${{ github.actor }}
