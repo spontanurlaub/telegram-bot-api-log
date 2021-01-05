@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Pull from Telegram
       run: |
-        rm -r .
+        rm -rf .
         wget --no-parent --recursive --convert-links https://core.telegram.org/bots/api
     - name: Commit Files
       run: |
