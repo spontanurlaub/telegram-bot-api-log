@@ -9,7 +9,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Pull from Telegram
       run: |
-        find ./ -type f -not -name 'README.md' -delete
         wget --no-parent --recursive --convert-links https://core.telegram.org/bots/api || true
         mv core.telegram.org/bots/* ./
     - name: Commit Files
