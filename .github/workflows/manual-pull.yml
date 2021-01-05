@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Pull from Telegram
       run: |
-        wget --no-parent -rq https://core.telegram.org/bots/api
+        wget https://core.telegram.org/bots/api
         git config --local user.name  ${{ github.actor }}
         git add .
         git commit -am "Update the Telegram Documentation"
