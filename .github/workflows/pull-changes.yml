@@ -1,7 +1,7 @@
 name: Pull changes from Telegram
 on:
   schedule:
-    - cron:  '*/10 * * * *'
+    - cron:  '*/30 * * * *'
 jobs:
   pull-changes:
     runs-on: ubuntu-latest
@@ -10,8 +10,12 @@ jobs:
     - uses: actions/checkout@v2
     - name: Pull from Telegram
       run: |
-        wget --no-parent -r https://core.telegram.org/bots/api
+        wget --no-parent --recursive --convert-links https://core.telegram.org/bots/api || true
+        mv core.telegram.org/bots/* ./
+    - name: Commit Files
+      run: |
         git config --local user.name  ${{ github.actor }}
+        git add .
         git commit -am "Update the Telegram Documentation"
     - name: Push changes
       uses: ad-m/github-push-action@master
