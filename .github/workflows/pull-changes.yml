@@ -1,0 +1,15 @@
+name: Pull changes from Telegram
+on:
+  push:
+    branches: ['master']
+jobs:
+  pull-changes:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Pull from Telegram
+      run: |
+        wget --no-parent -r https://core.telegram.org/bots/api
+        git config --local user.name  ${{ github.actor }}
+        git commit -am "Update the Telegram Documentation"
