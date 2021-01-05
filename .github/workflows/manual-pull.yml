@@ -1,8 +1,8 @@
-name: Pull changes from Telegram
+name: Pull changes from Telegram manually
 on:
   workflow_dispatch:
 jobs:
-  pull-changes:
+  pull-changes-manual:
     runs-on: ubuntu-latest
 
     steps:
