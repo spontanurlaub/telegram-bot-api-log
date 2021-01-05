@@ -19,6 +19,7 @@ jobs:
         git config --local user.name  ${{ github.actor }}
         git add .
         git commit -am "Update the Telegram Documentation"
+        git diff --stat
         echo ::set-output name=git_diff::$(git diff --stat origin/main)
     - name: Push changes
       if: steps.commit_files.outputs.git_diff != ''
