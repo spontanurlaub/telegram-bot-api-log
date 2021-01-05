@@ -12,7 +12,7 @@ jobs:
         rm -rf ./*
         wget --no-parent --recursive --convert-links https://core.telegram.org/bots/api || true
         mv core.telegram.org/bots/* ./
-        find ./ -type f -exec sed -i -e 's|<!-- page generated in .*-->||g' {} \
+        find ./* -type f -exec sed -i 's/<!-- page generated in .*-->//g' {} +
     - name: Commit Files
       id: commit_files
       run: |
