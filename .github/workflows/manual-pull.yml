@@ -10,7 +10,7 @@ jobs:
     - name: Pull from Telegram
       run: |
         rm -rf ./*
-        wget --no-parent --recursive --convert-links https://core.telegram.org/bots/api
+        wget --no-parent --recursive --convert-links https://core.telegram.org/bots/api || true
     - name: Commit Files
       run: |
         git config --local user.name  ${{ github.actor }}
