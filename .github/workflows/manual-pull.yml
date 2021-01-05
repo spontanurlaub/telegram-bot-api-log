@@ -38,5 +38,3 @@ jobs:
           The Telegram Bot API Documentation has changed in the last hour. 
 
           You can compare it to the previous version here: https://github.com/code1mountain/telegram-bot-api-log
-          
-          ${{ diff }}
