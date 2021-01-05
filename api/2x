@@ -2,10 +2,10 @@
 <html class="">
   <head>
     <meta charset="utf-8">
-    <title>YYY</title>
+    <title>api/2x</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="description" content="">
-    <meta property="og:title" content="YYY">
+    <meta property="og:title" content="api/2x">
     <meta property="og:image" content="">
     <meta property="og:description" content="">
     <link rel="shortcut icon" href="https://core.telegram.org/favicon.ico?4" type="image/x-icon" />
@@ -37,7 +37,7 @@
         <div class="dev_page">
           <div id="dev_page_content_wrap" class=" ">
   <div class="dev_page_bread_crumbs"></div>
-  <h1 id="dev_page_title" dir="auto">YYY</h1>
+  <h1 id="dev_page_title" dir="auto">api/2x</h1>
   
   <div id="dev_page_content" dir="auto">The page has not been saved</div>
   
@@ -119,4 +119,4 @@ removePreloadInit();
 </script>
   </body>
 </html>
-<!-- page generated in 12.31ms -->
+<!-- page generated in 18.53ms -->
