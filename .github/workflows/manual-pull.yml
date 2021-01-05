@@ -19,7 +19,7 @@ jobs:
         git add .
         git commit -am "Update the Telegram Documentation"
         echo ::set-output name=git_diff::$(git diff --stat origin/main)
-        git diff --stat origin/main
+        echo git_diff
     - name: Push changes
       if: steps.commit_files.git_diff != ''
       uses: ad-m/github-push-action@master
