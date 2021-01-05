@@ -19,15 +19,14 @@ jobs:
         git add .
         git commit -am "Update the Telegram Documentation"
         echo ::set-output name=git_diff::$(git diff --stat origin/main)
-        echo git_diff
     - name: Push changes
-      if: steps.commit_files.git_diff != ''
+      if: steps.commit_files.outputs.git_diff != ''
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         force: true
     - name: Notify changes
-      if: steps.commit_files.git_diff != ''
+      if: steps.commit_files.outputs.git_diff != ''
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_TO }}
@@ -36,4 +35,5 @@ jobs:
           The Telegram Bot API Documentation has changed in the last hour. 
 
           You can compare it to the previous version here: https://github.com/code1mountain/telegram-bot-api-log
-
+          
+          ${{ steps.commit_files.outputs.git_diff }}
