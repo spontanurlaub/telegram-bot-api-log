@@ -1,0 +1,25 @@
+name: Notify on bot api change
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - **.html
+      
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Notify changes
+        uses: appleboy/telegram-action@master
+        env:
+          diff: ${{ steps.commit_files.outputs.git_diff }}
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            The Telegram Bot API Documentation has changed in the last hour. 
+
+            You can compare it to the previous version here: https://github.com/code1mountain/telegram-bot-api-log
