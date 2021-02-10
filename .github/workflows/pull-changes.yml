@@ -20,3 +20,8 @@ jobs:
         git config --local user.name  ${{ github.actor }}
         git add .
         git commit -am "Update the Telegram Documentation" || true
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
