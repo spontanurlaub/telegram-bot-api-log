@@ -14,8 +14,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Notify changes
         uses: appleboy/telegram-action@master
-        env:
-          diff: ${{ steps.commit_files.outputs.git_diff }}
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
