@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Pull from Telegram
       run: |
-        rm -rf ./*
+        rm -rf !("readme.md")
         wget --no-parent --recursive --convert-links https://core.telegram.org/bots/api || true
         mv core.telegram.org/bots/* ./
         find ./* -type f -exec sed -i 's/<!-- page generated in .*-->//g' {} +
