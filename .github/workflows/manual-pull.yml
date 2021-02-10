@@ -9,10 +9,11 @@ jobs:
     - uses: actions/checkout@v2
     - name: Pull from Telegram
       run: |
-        find . -type f ! -name 'readme.md' -delete
+        rm -rf ./*
         wget --no-parent --recursive --convert-links https://core.telegram.org/bots/api || true
         mv core.telegram.org/bots/* ./
         find ./* -type f -exec sed -i 's/<!-- page generated in .*-->//g' {} +
+        printf "This repository periodically fetches https://api.telegram.org/bots (using wget) and publishes the result in this repository.\n\nChanges to the bot api are automatically notified in https://t.me/botapichanges" >> readme.md
     - name: Commit Files
       id: commit_files
       run: |
