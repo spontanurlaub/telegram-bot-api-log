@@ -1,7 +1,7 @@
 name: Pull changes from Telegram
 on:
   schedule:
-    - cron:  '*/30 * * * *'
+    - cron:  '45 * * * *'
 jobs:
   pull-changes:
     runs-on: ubuntu-latest
@@ -14,6 +14,7 @@ jobs:
         wget --no-parent --recursive --convert-links https://core.telegram.org/bots/api || true
         mv core.telegram.org/bots/* ./
         find ./* -type f -exec sed -i 's/<!-- page generated in .*-->//g' {} +
+        printf "This repository periodically fetches https://api.telegram.org/bots (using wget) and publishes the result in this repository.\n\nChanges to the bot api are automatically notified in https://t.me/botapichanges" >> readme.md
     - name: Commit Files
       id: commit_files
       run: |
