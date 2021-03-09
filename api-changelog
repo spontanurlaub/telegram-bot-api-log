@@ -51,6 +51,38 @@ To learn how to create…">
 <blockquote>
 <p>Subscribe to <a href="https://t.me/botnews">@BotNews</a> to be the first to know about the latest updates and join the discussion in <a href="https://t.me/bottalk">@BotTalk</a></p>
 </blockquote>
+<h3><a class="anchor" name="march-9-2021" href="api-changelog#march-9-2021"><i class="anchor-icon"></i></a>March 9, 2021</h3>
+<p><strong>Bot API 5.1</strong></p>
+<p><strong>Added two new update types</strong></p>
+<ul>
+<li>Added updates about member status changes in chats, represented by the class <a href="api#chatmemberupdated">ChatMemberUpdated</a> and the fields <em>my_chat_member</em> and <em>chat_member</em> in the <a href="api#update">Update</a> class. The bot must be an administrator in the chat to receive <em>chat_member</em> updates about other chat members. By default, only <em>my_chat_member</em> updates about the bot itself are received.</li>
+</ul>
+<p><strong>Improved Invite Links</strong></p>
+<ul>
+<li>Added the class <a href="api#chatinvitelink">ChatInviteLink</a>, representing an invite link to a chat.</li>
+<li>Added the method <a href="api#createchatinvitelink">createChatInviteLink</a>, which can be used to create new invite links in addition to the primary invite link.</li>
+<li>Added the method <a href="api#editchatinvitelink">editChatInviteLink</a>, which can be used to edit non-primary invite links created by the bot.</li>
+<li>Added the method <a href="api#revokechatinvitelink">revokeChatInviteLink</a>, which can be used to revoke invite links created by the bot.</li>
+</ul>
+<p><strong>Voice Chat Info</strong></p>
+<ul>
+<li>Added the type <a href="api#voicechatstarted">VoiceChatStarted</a> and the field <em>voice_chat_started</em> to the class <a href="api#message">Message</a>.</li>
+<li>Added the type <a href="api#voicechatended">VoiceChatEnded</a> and the field <em>voice_chat_ended</em> to the class <a href="api#message">Message</a>.</li>
+<li>Added the type <a href="api#voicechatparticipantsinvited">VoiceChatParticipantsInvited</a> and the field <em>voice_chat_participants_invited</em> to the class <a href="api#message">Message</a>.</li>
+<li>Added the new administrator privilege <em>can_manage_voice_chats</em> to the class <a href="api#chatmember">ChatMember</a> and parameter <em>can_manage_voice_chats</em> to the method <a href="api#promotechatmember">promoteChatMember</a>. For now, bots can use this privilege only for passing to other administrators.</li>
+</ul>
+<p><strong>And More</strong></p>
+<ul>
+<li>Added the type <a href="api#messageautodeletetimerchanged">MessageAutoDeleteTimerChanged</a> and the field <em>message_auto_delete_timer_changed</em> to the class <a href="api#message">Message</a>.</li>
+<li>Added the parameter <em>revoke_messages</em> to the method <a href="api#kickchatmember">kickChatMember</a>, allowing to delete all messages from a group for the user who is being removed.</li>
+<li>Added the new administrator privilege <em>can_manage_chat</em> to the class <a href="api#chatmember">ChatMember</a> and parameter <em>can_manage_chat</em> to the method <a href="api#promotechatmember">promoteChatMember</a>. This administrator right is implied by any other administrator privilege.</li>
+<li>Supported the new <em>bowling</em> animation for the random <a href="api#dice">dice</a>. Choose between different animations (dice, darts, basketball, football, bowling, slot machine) by specifying the <em>emoji</em> parameter in the method <a href="api#senddice">sendDice</a>.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong><img class="emoji" src="https://telegram.org/img/emoji/40/E29AA0.png" width="20" height="20" alt="⚠️" /> WARNING! <img class="emoji" src="https://telegram.org/img/emoji/40/E29AA0.png" width="20" height="20" alt="⚠️" /></strong><br>After one of the upcoming Bot API updates, user identifiers will become bigger than <code>2^31 - 1</code> and it will be no longer possible to store them in a signed 32-bit integer type. User identifiers will have up to 52 significant bits, so a 64-bit integer or double-precision float type would still be safe for storing them. Please make sure that your code can correctly handle such user identifiers.</p>
+</blockquote>
+<hr>
 <h3><a class="anchor" name="november-4-2020" href="api-changelog#november-4-2020"><i class="anchor-icon"></i></a>November 4, 2020</h3>
 <p>Introducing <strong>Bot API 5.0</strong></p>
 <p><strong>Run Your Own Bot API Server</strong></p>
