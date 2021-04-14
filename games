@@ -12,7 +12,7 @@
 
     <link href="https://core.telegram.org/css/bootstrap.min.css?3" rel="stylesheet">
     
-    <link href="https://core.telegram.org/css/telegram.css?209" rel="stylesheet" media="screen">
+    <link href="https://core.telegram.org/css/telegram.css?210" rel="stylesheet" media="screen">
     <style>
     </style>
   </head>
@@ -37,9 +37,9 @@
         <div class="dev_page">
           <div id="dev_page_content_wrap" class=" ">
   <div class="dev_page_bread_crumbs"><ul class="breadcrumb clearfix"><li><a  href="https://core.telegram.org/bots" >Telegram Bots</a></li><i class="icon icon-breadcrumb-divider"></i><li><a  href="games" >Gaming Platform</a></li></ul></div>
-  <h1 id="dev_page_title" dir="auto">Gaming Platform</h1>
+  <h1 id="dev_page_title">Gaming Platform</h1>
   
-  <div id="dev_page_content" dir="auto"><!-- scroll_nav -->
+  <div id="dev_page_content"><!-- scroll_nav -->
 
 <div class="dev_side_image">
   <a href="https://core.telegram.org/file/811140373/1/0_42vz9chLs.975647/383dca94f028b1872c" target="_blank"><img src="https://core.telegram.org/file/811140063/2/hlfJUWy75wU.82563/ea57853b3d4d9ab22f" title="Gaming Platform Poster">

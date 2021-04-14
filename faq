@@ -14,7 +14,7 @@ You may also find the Bot API…">
 
     <link href="https://core.telegram.org/css/bootstrap.min.css?3" rel="stylesheet">
     
-    <link href="https://core.telegram.org/css/telegram.css?209" rel="stylesheet" media="screen">
+    <link href="https://core.telegram.org/css/telegram.css?210" rel="stylesheet" media="screen">
     <style>
     </style>
   </head>
@@ -39,9 +39,9 @@ You may also find the Bot API…">
         <div class="dev_page">
           <div id="dev_page_content_wrap" class=" ">
   <div class="dev_page_bread_crumbs"><ul class="breadcrumb clearfix"><li><a  href="https://core.telegram.org/bots" >Telegram Bots</a></li><i class="icon icon-breadcrumb-divider"></i><li><a  href="faq" >Bots FAQ</a></li></ul></div>
-  <h1 id="dev_page_title" dir="auto">Bots FAQ</h1>
+  <h1 id="dev_page_title">Bots FAQ</h1>
   
-  <div id="dev_page_content" dir="auto"><blockquote>
+  <div id="dev_page_content"><blockquote>
 <p>If you are new to Telegram bots, we recommend checking out our <a href="https://core.telegram.org/bots"><strong>Introduction to Bots</strong></a> first.
 You may also find the <strong><a href="api">Bot API Manual</a></strong> useful.</p>
 </blockquote>

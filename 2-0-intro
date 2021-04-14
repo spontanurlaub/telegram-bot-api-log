@@ -14,7 +14,7 @@ If this is not the case, kindly check out our…">
 
     <link href="https://core.telegram.org/css/bootstrap.min.css?3" rel="stylesheet">
     
-    <link href="https://core.telegram.org/css/telegram.css?209" rel="stylesheet" media="screen">
+    <link href="https://core.telegram.org/css/telegram.css?210" rel="stylesheet" media="screen">
     <style>
     </style>
   </head>
@@ -39,9 +39,9 @@ If this is not the case, kindly check out our…">
         <div class="dev_page">
           <div id="dev_page_content_wrap" class=" ">
   <div class="dev_page_bread_crumbs"></div>
-  <h1 id="dev_page_title" dir="auto">Introducing Bot API 2.0</h1>
+  <h1 id="dev_page_title">Introducing Bot API 2.0</h1>
   
-  <div id="dev_page_content" dir="auto"><!-- scroll_nav -->
+  <div id="dev_page_content"><!-- scroll_nav -->
 
 <blockquote>
 <p>Howdy! This text assumes that you‘re familiar with Telegram’s bot platform.<br>If this is not the case, kindly check out our <a href="https://core.telegram.org/bots"><strong>Introduction to Bots</strong></a>.</p>

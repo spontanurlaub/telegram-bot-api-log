@@ -12,7 +12,7 @@
 
     <link href="https://core.telegram.org/css/bootstrap.min.css?3" rel="stylesheet">
     
-    <link href="https://core.telegram.org/css/telegram.css?209" rel="stylesheet" media="screen">
+    <link href="https://core.telegram.org/css/telegram.css?210" rel="stylesheet" media="screen">
     <style>
     </style>
   </head>
@@ -37,9 +37,9 @@
         <div class="dev_page">
           <div id="dev_page_content_wrap" class=" ">
   <div class="dev_page_bread_crumbs"></div>
-  <h1 id="dev_page_title" dir="auto">api/2x</h1>
+  <h1 id="dev_page_title">api/2x</h1>
   
-  <div id="dev_page_content" dir="auto">The page has not been saved</div>
+  <div id="dev_page_content">The page has not been saved</div>
   
 </div>
           

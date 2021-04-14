@@ -12,7 +12,7 @@
 
     <link href="https://core.telegram.org/css/bootstrap.min.css?3" rel="stylesheet">
     
-    <link href="https://core.telegram.org/css/telegram.css?209" rel="stylesheet" media="screen">
+    <link href="https://core.telegram.org/css/telegram.css?210" rel="stylesheet" media="screen">
     <style>
     </style>
   </head>
@@ -37,9 +37,9 @@
         <div class="dev_page">
           <div id="dev_page_content_wrap" class=" ">
   <div class="dev_page_bread_crumbs"><ul class="breadcrumb clearfix"><li><a  href="https://core.telegram.org/bots" >Telegram Bots</a></li><i class="icon icon-breadcrumb-divider"></i><li><a  href="faq" >FAQ</a></li><i class="icon icon-breadcrumb-divider"></i><li><a  href="self-signed" >Using self-signed certificates</a></li></ul></div>
-  <h1 id="dev_page_title" dir="auto">Using self-signed certificates</h1>
+  <h1 id="dev_page_title">Using self-signed certificates</h1>
   
-  <div id="dev_page_content" dir="auto"><p>Upload your certificate using the <em>certificate</em> parameter in the <a href="api#setwebhook">setWebhook</a> method. The certificate supplied should be <strong>PEM encoded</strong> (ASCII BASE64), the pem file should only contain the <strong>public key</strong> (including BEGIN and END portions). When converting from a bundle format, please split the file to only include the public key.</p>
+  <div id="dev_page_content"><p>Upload your certificate using the <em>certificate</em> parameter in the <a href="api#setwebhook">setWebhook</a> method. The certificate supplied should be <strong>PEM encoded</strong> (ASCII BASE64), the pem file should only contain the <strong>public key</strong> (including BEGIN and END portions). When converting from a bundle format, please split the file to only include the public key.</p>
 <h3><a class="anchor" name="generating-a-self-signed-certificate-pair-pem" href="self-signed#generating-a-self-signed-certificate-pair-pem"><i class="anchor-icon"></i></a>Generating a self-signed certificate pair (PEM):</h3>
 <h4><a class="anchor" name="openssl" href="self-signed#openssl"><i class="anchor-icon"></i></a>Openssl</h4>
 <blockquote>
