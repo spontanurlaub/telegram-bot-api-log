@@ -12,7 +12,7 @@
 
     <link href="https://core.telegram.org/css/bootstrap.min.css?3" rel="stylesheet">
     
-    <link href="https://core.telegram.org/css/telegram.css?211" rel="stylesheet" media="screen">
+    <link href="https://core.telegram.org/css/telegram.css?212" rel="stylesheet" media="screen">
     <style>
     </style>
   </head>
@@ -105,7 +105,7 @@
   </div>
 </div>
     </div>
-    <script src="https://core.telegram.org/js/main.js?41"></script>
+    <script src="https://core.telegram.org/js/main.js?42"></script>
     
     <script>backToTopInit("Go up");
 removePreloadInit();
