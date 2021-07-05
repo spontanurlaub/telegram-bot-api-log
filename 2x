@@ -2,10 +2,10 @@
 <html class="">
   <head>
     <meta charset="utf-8">
-    <title>2x</title>
+    <title>Page not found</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="description" content="">
-    <meta property="og:title" content="2x">
+    <meta property="og:title" content="Page not found">
     <meta property="og:image" content="">
     <meta property="og:description" content="">
     <link rel="shortcut icon" href="https://core.telegram.org/favicon.ico?4" type="image/x-icon" />
@@ -37,7 +37,7 @@
         <div class="dev_page">
           <div id="dev_page_content_wrap" class=" ">
   <div class="dev_page_bread_crumbs"></div>
-  <h1 id="dev_page_title">2x</h1>
+  <h1 id="dev_page_title">Page not found</h1>
   
   <div id="dev_page_content">The page has not been saved</div>
   
