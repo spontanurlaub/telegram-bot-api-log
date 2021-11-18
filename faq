@@ -126,7 +126,7 @@ You may also find the Bot API…">
 <li>CN must exactly match your domain.</li>
 </ul>
 <blockquote>
-<p>Please check out this new <a href="webhooks"><strong>WEBHOOK GUIDE</strong></a> to learn all there is to know about webhooks!</p>
+<p>Please check out this new <a href="https://core.telegram.org/bots/webhooks"><strong>WEBHOOK GUIDE</strong></a> to learn all there is to know about webhooks!</p>
 </blockquote>
 <h4><a class="anchor" name="i-39m-having-trouble-with-my-self-signed-certificate" href="faq#i-39m-having-trouble-with-my-self-signed-certificate"><i class="anchor-icon"></i></a>I&#39;m having trouble with my self-signed certificate!</h4>
 <p>Please take a look at this <a href="self-signed">self-signed certificate guide</a> we made just for you. If you&#39;ve read it and still have a question, ping us on botsupport.</p>
