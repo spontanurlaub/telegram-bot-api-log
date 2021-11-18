@@ -95,7 +95,7 @@ To learn how to create…">
 <h4><a class="anchor" name="april-26-2021" href="index.html#april-26-2021"><i class="anchor-icon"></i></a>April 26, 2021</h4>
 <p><strong>Bot API 5.2</strong></p>
 <ul>
-<li>Support for <a href="https://telegram.org/blog/payments-2-0-scheduled-voice-chats">Payments 2.0</a>, see <a href="https://core.telegram.org/bots/payments">this manual</a> for more details about the <strong>Bot Payments API</strong>.</li>
+<li>Support for <a href="https://telegram.org/blog/payments-2-0-scheduled-voice-chats">Payments 2.0</a>, see <a href="../payments">this manual</a> for more details about the <strong>Bot Payments API</strong>.</li>
 <li>Added the type <a href="index.html#inputinvoicemessagecontent">InputInvoiceMessageContent</a> to support sending invoices as inline query results.</li>
 <li>Allowed sending invoices to group, supergroup and channel chats.</li>
 <li>Added the fields <em>max_tip_amount</em> and <em>suggested_tip_amounts</em> to the method <a href="index.html#sendinvoice">sendInvoice</a> to allow adding optional tips to the payment.</li>
@@ -326,7 +326,7 @@ To learn how to create…">
 </table>
 <blockquote>
 <p><strong>Notes</strong><br><strong>1.</strong> You will not be able to receive updates using <a href="index.html#getupdates">getUpdates</a> for as long as an outgoing webhook is set up.<br><strong>2.</strong> To use a self-signed certificate, you need to upload your <a href="../self-signed">public key certificate</a> using <em>certificate</em> parameter. Please upload as InputFile, sending a String will not work.<br><strong>3.</strong> Ports currently supported <em>for Webhooks</em>: <strong>443, 80, 88, 8443</strong>.</p>
-<p><strong>NEW!</strong> If you&#39;re having any trouble setting up webhooks, please check out this <a href="https://core.telegram.org/bots/webhooks">amazing guide to Webhooks</a>.</p>
+<p><strong>NEW!</strong> If you&#39;re having any trouble setting up webhooks, please check out this <a href="../webhooks">amazing guide to Webhooks</a>.</p>
 </blockquote>
 <h4><a class="anchor" name="deletewebhook" href="index.html#deletewebhook"><i class="anchor-icon"></i></a>deleteWebhook</h4>
 <p>Use this method to remove webhook integration if you decide to switch back to <a href="index.html#getupdates">getUpdates</a>. Returns <em>True</em> on success.</p>
@@ -7834,7 +7834,7 @@ pre-formatted fixed-width code block written in the Python programming language
 <tr>
 <td>currency</td>
 <td>String</td>
-<td>Three-letter ISO 4217 currency code, see <a href="https://core.telegram.org/bots/payments#supported-currencies">more on currencies</a></td>
+<td>Three-letter ISO 4217 currency code, see <a href="../payments#supported-currencies">more on currencies</a></td>
 </tr>
 <tr>
 <td>prices</td>
@@ -7953,7 +7953,7 @@ pre-formatted fixed-width code block written in the Python programming language
 </table>
 <p><strong>Note:</strong> It is necessary to enable <a href="../inline#collecting-feedback">inline feedback</a> via <a href="https://t.me/botfather">@Botfather</a> in order to receive these objects in updates.</p>
 <h3><a class="anchor" name="payments" href="index.html#payments"><i class="anchor-icon"></i></a>Payments</h3>
-<p>Your bot can accept payments from Telegram users. Please see the <a href="https://core.telegram.org/bots/payments">introduction to payments</a> for more details on the process and how to set up payments for your bot. Please note that users will need Telegram v.4.0 or higher to use payments (released on May 18, 2017).</p>
+<p>Your bot can accept payments from Telegram users. Please see the <a href="../payments">introduction to payments</a> for more details on the process and how to set up payments for your bot. Please note that users will need Telegram v.4.0 or higher to use payments (released on May 18, 2017).</p>
 <h4><a class="anchor" name="sendinvoice" href="index.html#sendinvoice"><i class="anchor-icon"></i></a>sendInvoice</h4>
 <p>Use this method to send invoices. On success, the sent <a href="index.html#message">Message</a> is returned.</p>
 <table class="table">
@@ -8000,7 +8000,7 @@ pre-formatted fixed-width code block written in the Python programming language
 <td>currency</td>
 <td>String</td>
 <td>Yes</td>
-<td>Three-letter ISO 4217 currency code, see <a href="https://core.telegram.org/bots/payments#supported-currencies">more on currencies</a></td>
+<td>Three-letter ISO 4217 currency code, see <a href="../payments#supported-currencies">more on currencies</a></td>
 </tr>
 <tr>
 <td>prices</td>
@@ -8213,7 +8213,7 @@ pre-formatted fixed-width code block written in the Python programming language
 <tr>
 <td>amount</td>
 <td>Integer</td>
-<td>Price of the product in the <em>smallest units</em> of the <a href="https://core.telegram.org/bots/payments#supported-currencies">currency</a> (integer, <strong>not</strong> float/double). For example, for a price of <code>US$ 1.45</code> pass <code>amount = 145</code>. See the <em>exp</em> parameter in <a href="../payments/currencies.json">currencies.json</a>, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies).</td>
+<td>Price of the product in the <em>smallest units</em> of the <a href="../payments#supported-currencies">currency</a> (integer, <strong>not</strong> float/double). For example, for a price of <code>US$ 1.45</code> pass <code>amount = 145</code>. See the <em>exp</em> parameter in <a href="../payments/currencies.json">currencies.json</a>, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies).</td>
 </tr>
 </tbody>
 </table>
@@ -8246,7 +8246,7 @@ pre-formatted fixed-width code block written in the Python programming language
 <tr>
 <td>currency</td>
 <td>String</td>
-<td>Three-letter ISO 4217 <a href="https://core.telegram.org/bots/payments#supported-currencies">currency</a> code</td>
+<td>Three-letter ISO 4217 <a href="../payments#supported-currencies">currency</a> code</td>
 </tr>
 <tr>
 <td>total_amount</td>
@@ -8373,7 +8373,7 @@ pre-formatted fixed-width code block written in the Python programming language
 <tr>
 <td>currency</td>
 <td>String</td>
-<td>Three-letter ISO 4217 <a href="https://core.telegram.org/bots/payments#supported-currencies">currency</a> code</td>
+<td>Three-letter ISO 4217 <a href="../payments#supported-currencies">currency</a> code</td>
 </tr>
 <tr>
 <td>total_amount</td>
@@ -8464,7 +8464,7 @@ pre-formatted fixed-width code block written in the Python programming language
 <tr>
 <td>currency</td>
 <td>String</td>
-<td>Three-letter ISO 4217 <a href="https://core.telegram.org/bots/payments#supported-currencies">currency</a> code</td>
+<td>Three-letter ISO 4217 <a href="../payments#supported-currencies">currency</a> code</td>
 </tr>
 <tr>
 <td>total_amount</td>
