@@ -1964,7 +1964,7 @@ To learn how to create…">
 </tbody>
 </table>
 <h4><a class="anchor" name="inlinekeyboardmarkup" href="api#inlinekeyboardmarkup"><i class="anchor-icon"></i></a>InlineKeyboardMarkup</h4>
-<p>This object represents an <a href="features#inline-keyboards-and-on-the-fly-updating">inline keyboard</a> that appears right next to the message it belongs to.</p>
+<p>This object represents an <a href="features#inline-keyboards">inline keyboard</a> that appears right next to the message it belongs to.</p>
 <table class="table">
 <thead>
 <tr>

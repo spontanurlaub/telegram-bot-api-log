@@ -251,7 +251,7 @@ width=44% /></a>
 <li>Confirm the payment by checking for a <a href="api#successfulpayment">successful payment service message</a>.</li>
 <li>Ship the goods or provide the services.</li>
 </ul>
-<p>A full and exhaustive guide, including live checklist, parameters and in-depth method descriptions is available <a href="bots/payments">here</a>. We <strong>strongly recommend</strong> that you read the full guide before going live.</p>
+<p>A full and exhaustive guide, including live checklist, parameters and in-depth method descriptions is available <a href="payments">here</a>. We <strong>strongly recommend</strong> that you read the full guide before going live.</p>
 <div>
   <a href="https://core.telegram.org/file/464001393/101fc/SB_bFCLR0tg.130549/7ecf91aaa44737e8cb" target="_blank"><img src="https://core.telegram.org/file/464001393/101fc/SB_bFCLR0tg.130549/7ecf91aaa44737e8cb" title="Payments"  class="dev_page_image" width=50% /></a>
 </div>
@@ -317,12 +317,12 @@ width=44% /></a>
 <p>Once you&#39;re done, don&#39;t forget to check out our <a href="api#stickers">remaining sticker methods</a> to find out how to <a href="api#setstickersetthumb">edit</a>, <a href="api#deletestickerfromset">delete</a> and even <a href="api#setstickerpositioninset">reorder</a> your pack.<br>Note that these methods will only work on packs <strong>created by the bot that is calling them</strong>.</p>
 </blockquote>
 <h3><a class="anchor" name="language-support" href="features#language-support"><i class="anchor-icon"></i></a>Language Support</h3>
-<p>Bots can tailor their interfaces to <strong>support multiple languages</strong> – updating inputs and information on the fly. A user’s in-app <a href="api#user">language_code</a> is included in every relevant <a href="api#Update">update</a> as an <a href="https://en.wikipedia.org/wiki/IETF_language_tag">IETF language tag</a>, allowing bots to adapt accordingly. </p>
+<p>Bots can tailor their interfaces to <strong>support multiple languages</strong> – updating inputs and information on the fly. A user’s in-app <a href="api#user">language_code</a> is included in every relevant <a href="api#update">update</a> as an <a href="https://en.wikipedia.org/wiki/IETF_language_tag">IETF language tag</a>, allowing bots to adapt accordingly. </p>
 <p>We recommend that you follow our guidelines to provide <strong>the best user experience</strong>.</p>
 <ul>
 <li>Your interfaces, texts and <a href="api#answerinlinequery">inline results</a> should adapt seamlessly to the <em>language_code</em>, without user intervention.</li>
 <li>Connected <a href="webapps">WebApps</a> will receive the user&#39;s <em>language_code</em> – your HTML page should account for it.</li>
-<li><a href="html5-games">HTML5 Games</a> can obtain language information if you specify it as a <a href="games#using-url-parameters">URL parameter</a>. You can generate this parameter from the <em>language_code</em> field in the <a href="api#User">User</a> object served with the initial game <a href="api#callbackquery">CallbackQuery</a>.</li>
+<li><a href="html5-games">HTML5 Games</a> can obtain language information if you specify it as a <a href="games#using-url-parameters">URL parameter</a>. You can generate this parameter from the <em>language_code</em> field in the <a href="api#user">User</a> object served with the initial game <a href="api#callbackquery">CallbackQuery</a>.</li>
 <li>Command lists can also be specified for individual languages – more on this <a href="features#commands">here</a>.</li>
 </ul>
 <div class="blog_video_player_wrap" style="max-width: 400px; margin: 20px auto 20px;">
@@ -381,11 +381,11 @@ width=44% /></a>
 <p>To provide a good user experience, please respond to all messages that are sent to your bot. Respond to message updates by calling send… methods (e.g. <a href="api#sendmessage">sendMessage</a>).</p>
 </blockquote>
 <ul>
-<li><strong>Too few answers to inline queries</strong>. Conversion rate: <strong>{value}</strong> - Your bot is not replying to all inline queries that are being sent to it, calculated in the same way as above. Respond to <code>inline_query</code> updates by calling <a href="api#answerInlineQuery">answerInlineQuery</a>.</li>
+<li><strong>Too few answers to inline queries</strong>. Conversion rate: <strong>{value}</strong> - Your bot is not replying to all inline queries that are being sent to it, calculated in the same way as above. Respond to <code>inline_query</code> updates by calling <a href="api#answerinlinequery">answerInlineQuery</a>.</li>
 </ul>
 <ul>
 <li><strong>Too few answers to callback queries</strong>. Conversion rate: <strong>{value}</strong></li>
-<li><strong>Too few answers to callback game queries</strong>. Conversion rate: <strong>{value}</strong> - Your bot is not replying to all callback queries that are being sent to it (with or without games), calculated in the same way as above. Respond to <code>callback_query</code> updates by calling <a href="api#answerCallbackQuery">answerCallbackQuery</a>.</li>
+<li><strong>Too few answers to callback game queries</strong>. Conversion rate: <strong>{value}</strong> - Your bot is not replying to all callback queries that are being sent to it (with or without games), calculated in the same way as above. Respond to <code>callback_query</code> updates by calling <a href="api#answercallbackquery">answerCallbackQuery</a>.</li>
 </ul>
 <h4><a class="anchor" name="local-bot-api" href="features#local-bot-api"><i class="anchor-icon"></i></a>Local Bot API</h4>
 <p>You can host and work with <strong>your own instance</strong> of our open-source <a href="api">Bot API</a>.<br>The <strong>source code</strong> is available <a href="https://github.com/tdlib/telegram-bot-api">here</a>, along with a quick <a href="https://github.com/tdlib/telegram-bot-api#installation">installation guide</a>.</p>
