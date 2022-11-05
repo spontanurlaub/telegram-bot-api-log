@@ -54,6 +54,20 @@ To learn how to create…">
 <blockquote>
 <p>Subscribe to <a href="https://t.me/botnews">@BotNews</a> to be the first to know about the latest updates and join the discussion in <a href="https://t.me/bottalk">@BotTalk</a></p>
 </blockquote>
+<h3><a class="anchor" name="november-5-2022" href="api-changelog#november-5-2022"><i class="anchor-icon"></i></a>November 5, 2022</h3>
+<p><strong>Bot API 6.3</strong></p>
+<ul>
+<li>Added support for <a href="https://telegram.org/blog/topics-in-groups-collectible-usernames#topics-in-groups">Topics in Groups</a>.</li>
+<li>Added the field <em>is_forum</em> to the class <a href="api#chat">Chat</a>.</li>
+<li>Added the fields <em>is_topic_message</em> and <em>message_thread_id</em> to the class <a href="api#message">Message</a> to allow detection of messages belonging to a forum topic and their message thread identifier.</li>
+<li>Added the classes <a href="api#forumtopiccreated">ForumTopicCreated</a>, <a href="api#forumtopicclosed">ForumTopicClosed</a>, and <a href="api#forumtopicreopened">ForumTopicReopened</a> and the fields <em>forum_topic_created</em>, <em>forum_topic_closed</em>, and <em>forum_topic_reopened</em> to the class <a href="api#message">Message</a>. Note that service messages about forum topic creation can&#39;t be deleted with the <a href="api#deletemessage">deleteMessage</a> method.</li>
+<li>Added the field <em>can_manage_topics</em> to the classes <a href="api#chatadministratorrights">ChatAdministratorRights</a>, <a href="api#chatpermissions">ChatPermissions</a>, <a href="api#chatmemberadministrator">ChatMemberAdministrator</a>, and <a href="api#chatmemberrestricted">ChatMemberRestricted</a>.</li>
+<li>Added the parameter <em>can_manage_topics</em> to the method <a href="api#promotechatmember">promoteChatMember</a>.</li>
+<li>Added the methods <a href="api#createforumtopic">createForumTopic</a>, <a href="api#editforumtopic">editForumTopic</a>, <a href="api#closeforumtopic">closeForumTopic</a>, <a href="api#reopenforumtopic">reopenForumTopic</a>, <a href="api#deleteforumtopic">deleteForumTopic</a>, <a href="api#unpinallforumtopicmessages">unpinAllForumTopicMessages</a>, and <a href="api#getforumtopiciconstickers">getForumTopicIconStickers</a> for forum topic management.</li>
+<li>Added the parameter <em>message_thread_id</em> to the methods <a href="api#sendmessage">sendMessage</a>, <a href="api#sendphoto">sendPhoto</a>, <a href="api#sendvideo">sendVideo</a>, <a href="api#sendanimation">sendAnimation</a>, <a href="api#sendaudio">sendAudio</a>, <a href="api#senddocument">sendDocument</a>, <a href="api#sendsticker">sendSticker</a>, <a href="api#sendvideonote">sendVideoNote</a>, <a href="api#sendvoice">sendVoice</a>, <a href="api#sendlocation">sendLocation</a>, <a href="api#sendvenue">sendVenue</a>, <a href="api#sendcontact">sendContact</a>, <a href="api#sendpoll">sendPoll</a>, <a href="api#senddice">sendDice</a>, <a href="api#sendinvoice">sendInvoice</a>, <a href="api#sendgame">sendGame</a>, <a href="api#sendmediagroup">sendMediaGroup</a>, <a href="api#copymessage">copyMessage</a>, <a href="api#forwardmessage">forwardMessage</a> to support sending of messages to a forum topic.</li>
+<li>Added support for <a href="https://telegram.org/blog/topics-in-groups-collectible-usernames#collectible-usernames">Multiple Usernames</a> via the field <em>active_usernames</em> in the class <a href="api#chat">Chat</a>.</li>
+<li>Added the field <em>emoji_status_custom_emoji_id</em> to the class <a href="api#chat">Chat</a>.</li>
+</ul>
 <h3><a class="anchor" name="august-12-2022" href="api-changelog#august-12-2022"><i class="anchor-icon"></i></a>August 12, 2022</h3>
 <p><strong>Bot API 6.2</strong></p>
 <p><strong>Custom Emoji Support</strong></p>
