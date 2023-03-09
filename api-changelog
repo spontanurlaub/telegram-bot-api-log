@@ -55,6 +55,35 @@ To learn how to create…">
 <p>Subscribe to <a href="https://t.me/botnews">@BotNews</a> to be the first to know about the latest updates and join the discussion in <a href="https://t.me/bottalk">@BotTalk</a></p>
 </blockquote>
 <h3><a class="anchor" name="2023" href="api-changelog#2023"><i class="anchor-icon"></i></a>2023</h3>
+<h4><a class="anchor" name="march-9-2023" href="api-changelog#march-9-2023"><i class="anchor-icon"></i></a>March 9, 2023</h4>
+<p><strong>Bot API 6.6</strong></p>
+<ul>
+<li>Added the ability to set different bot descriptions for different user languages using the method <a href="api#setmydescription">setMyDescription</a>.</li>
+<li>Added the ability to get the current bot description in the given language as the class <a href="api#botdescription">BotDescription</a> using the method <a href="api#getmydescription">getMyDescription</a>.</li>
+<li>Added the ability to set different bot short descriptions for different user languages using the method <a href="api#setmyshortdescription">setMyShortDescription</a>.</li>
+<li>Added the ability to get the current bot short description in the given language as the class <a href="api#botshortdescription">BotShortDescription</a> using the method <a href="api#getmyshortdescription">getMyShortDescription</a>.</li>
+<li>Added the parameter <em>emoji</em> to the method <a href="api#sendsticker">sendSticker</a> to specify an emoji for just uploaded stickers.</li>
+<li>Added support for the creation of custom emoji sticker sets in <a href="api#createnewstickerset">createNewStickerSet</a>.</li>
+<li>Added the parameter <em>needs_repainting</em> to the method <a href="api#createnewstickerset">createNewStickerSet</a> to automatically change the color of emoji based on context (e.g., use text color in messages, accent color in statuses, etc.).</li>
+<li>Added the field <em>needs_repainting</em> to the class <a href="api#sticker">Sticker</a>.</li>
+<li>Replaced the parameters <em>png_sticker</em>, <em>tgs_sticker</em>, <em>webm_sticker</em>, <em>emojis</em> and <em>mask_postion</em> in the method <a href="api#addstickertoset">addStickerToSet</a> with the parameter <em>sticker</em> of the type <a href="api#inputsticker">InputSticker</a>.</li>
+<li>Added support for the creation of sticker sets with multiple initial stickers in <a href="api#createnewstickerset">createNewStickerSet</a> by replacing the parameters <em>png_sticker</em>, <em>tgs_sticker</em>, <em>webm_sticker</em>, <em>emojis</em> and <em>mask_postion</em> with the parameters <em>stickers</em> and <em>sticker_format</em>.</li>
+<li>Added support for .WEBP files in <a href="api#createnewstickerset">createNewStickerSet</a> and <a href="api#addstickertoset">addStickerToSet</a>.</li>
+<li>Added support for .WEBP, .TGS, and .WEBM files in <a href="api#uploadstickerfile">uploadStickerFile</a> by replacing the parameter <em>png_sticker</em> in the method <a href="api#uploadstickerfile">uploadStickerFile</a> with the parameters <em>sticker</em> and <em>sticker_format</em>.</li>
+<li>Added the ability to specify search keywords for stickers added to sticker sets.</li>
+<li>Added the method <a href="api#setcustomemojistickersetthumbnail">setCustomEmojiStickerSetThumbnail</a> for editing the thumbnail of custom emoji sticker sets created by the bot.</li>
+<li>Added the method <a href="api#setstickersettitle">setStickerSetTitle</a> for editing the title of sticker sets created by the bot.</li>
+<li>Added the method <a href="api#deletestickerset">deleteStickerSet</a> for complete deletion of a given sticker set that was created by the bot.</li>
+<li>Added the method <a href="api#setstickeremojilist">setStickerEmojiList</a> for changing the list of emoji associated with a sticker.</li>
+<li>Added the method <a href="api#setstickerkeywords">setStickerKeywords</a> for changing the search keywords assigned to a sticker.</li>
+<li>Added the method <a href="api#setstickermaskposition">setStickerMaskPosition</a> for changing the <a href="api#maskposition">mask position</a> of a mask sticker.</li>
+<li>Renamed the field <em>thumb</em> in the classes <a href="api#animation">Animation</a>, <a href="api#audio">Audio</a>, <a href="api#document">Document</a>, <a href="api#sticker">Sticker</a>, <a href="api#video">Video</a>, <a href="api#videonote">VideoNote</a>, <a href="api#inputmediaanimation">InputMediaAnimation</a>, <a href="api#inputmediaaudio">InputMediaAudio</a>, <a href="api#inputmediadocument">InputMediaDocument</a>, <a href="api#inputmediavideo">InputMediaVideo</a>, <a href="api#stickerset">StickerSet</a> to <em>thumbnail</em>.</li>
+<li>Renamed the parameter <em>thumb</em> in the methods <a href="api#sendanimation">sendAnimation</a>, <a href="api#sendaudio">sendAudio</a>, <a href="api#senddocument">sendDocument</a>, <a href="api#sendvideo">sendVideo</a>, <a href="api#sendvideonote">sendVideoNote</a> to <em>thumbnail</em>.</li>
+<li>Renamed the method <em>setStickerSetThumb</em> to <a href="api#setstickersetthumbnail">setStickerSetThumbnail</a> and its parameter <em>thumb</em> to <em>thumbnail</em>.</li>
+<li>Renamed the fields <em>thumb_url</em>, <em>thumb_width</em>, and <em>thumb_height</em> in the classes <a href="api#inlinequeryresultarticle">InlineQueryResultArticle</a>, <a href="api#inlinequeryresultcontact">InlineQueryResultContact</a>, <a href="api#inlinequeryresultdocument">InlineQueryResultDocument</a>, <a href="api#inlinequeryresultlocation">InlineQueryResultLocation</a>, and <a href="api#inlinequeryresultvenue">InlineQueryResultVenue</a> to <em>thumbnail_url</em>, <em>thumbnail_width</em>, and <em>thumbnail_height</em> respectively.</li>
+<li>Renamed the field <em>thumb_url</em> in the classes <a href="api#inlinequeryresultphoto">InlineQueryResultPhoto</a> and <a href="api#inlinequeryresultvideo">InlineQueryResultVideo</a> to <em>thumbnail_url</em>.</li>
+<li>Renamed the fields <em>thumb_url</em> and <em>thumb_mime_type</em> in the classes <a href="api#inlinequeryresultgif">InlineQueryResultGif</a>, and <a href="api#inlinequeryresultmpeg4gif">InlineQueryResultMpeg4Gif</a> to <em>thumbnail_url</em> and <em>thumbnail_mime_type</em> respectively.</li>
+</ul>
 <h4><a class="anchor" name="february-3-2023" href="api-changelog#february-3-2023"><i class="anchor-icon"></i></a>February 3, 2023</h4>
 <p><strong>Bot API 6.5</strong></p>
 <ul>
