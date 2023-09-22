@@ -501,7 +501,7 @@ To learn how to create…">
 <li>Added the new object <a href="api#loginurl">LoginUrl</a> and the new field <em>login_url</em> to the <a href="api#inlinekeyboardbutton">InlineKeyboardButton</a> object which allows to <strong>automatically authorize</strong> users before they go to a URL specified by the bot. Users will be asked to confirm authorization in their Telegram app (needs version 5.7 or higher) when they press the button:</li>
 </ul>
 <div class="blog_image_wrap">
-  <a href="https://core.telegram.org/file/811140015/1734/8VZFkwWXalM.97872/6127fa62d8a0bf2b3c" target="_blank"><img src="https://core.telegram.org/file/811140909/1631/20k1Z53eiyY.23995/c541e89b74253623d9" title="TITLE" alt="TITLE" srcset="https://core.telegram.org/file/811140015/1734/8VZFkwWXalM.97872/6127fa62d8a0bf2b3c , https://core.telegram.org/bots/2x" /></a>
+  <a href="https://core.telegram.org/file/811140015/1734/8VZFkwWXalM.97872/6127fa62d8a0bf2b3c" target="_blank"><img src="https://core.telegram.org/file/811140909/1631/20k1Z53eiyY.23995/c541e89b74253623d9" title="TITLE" alt="TITLE" srcset="https://core.telegram.org/file/811140015/1734/8VZFkwWXalM.97872/6127fa62d8a0bf2b3c , 2x" /></a>
 </div>
 
 <p><strong>Also in this update:</strong></p>
